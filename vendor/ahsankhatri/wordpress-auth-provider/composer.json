@@ -1,0 +1,34 @@
+{
+    "name": "ahsankhatri/wordpress-auth-provider",
+    "description": "A package to provide wordpress users in laravel authentication system.",
+    "keywords": ["laravel", "wordpress", "authentication"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahsaan Muhammad Yousuf",
+            "email": "ahsankhatri1992@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "hautelook/phpass": ">=0.3",
+        "laravel/framework": "^5.6|^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MrShan0\\WordpressAuth\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MrShan0\\WordpressAuth\\WordpressAuthServiceProvider"
+            ]
+        }
+    }
+}
